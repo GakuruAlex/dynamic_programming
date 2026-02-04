@@ -9,7 +9,12 @@ def climbing_stairs(num_stairs: int)->int:
 
     stair_one: int = 1
     stair_two: int = 2
-    for stair in range(3, num_stairs + 1):
+    if num_stairs == 1:
+        return 1
+    elif num_stairs == 2:
+        return 2
+    else:
+        for stair in range(3, num_stairs + 1):
 
-        stair_one,stair_two = stair_two, stair_one + stair_two
-    return stair_two
+            stair_one,stair_two = stair_two, stair_one + stair_two
+        return stair_two
