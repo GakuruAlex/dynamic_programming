@@ -4,7 +4,9 @@ import pytest
 
 @pytest.mark.parametrize('cost, min_cost',[
     ([10, 15, 28], 15),
-    ([1, 100, 1, 1, 1, 100, 1, 1, 100, 1], 6)
+    ([1, 100, 1, 1, 1, 100, 1, 1, 100, 1], 6),
+    ([1, 2, 3], 2),
+    ([1, 2, 1, 2, 1, 1, 1], 4)
 ])
 
 def test_min_cost(cost: List[int], min_cost: int)->None:
