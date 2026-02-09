@@ -11,6 +11,5 @@ def max_loot(houses: List[int])-> int:
 
     for i in range(2, houses_len):
         current = max(prev_1, prev_2 + houses[i])
-        prev_2 = prev_1
-        prev_1 = current
+        prev_2 , prev_1= prev_1, current
     return prev_1

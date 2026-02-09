@@ -33,4 +33,12 @@ pytest test_house_robber.py
 | Case 7    | [100]                                                                       | 100             |
 | Case 8    | []                                                                          | 0               |
 
- 
+ # Complexity #
+
+## Time Complexity ##
+
+Linear time complexity O(n)
+
+## Space Complexity ##
+
+Constant space complexity O(1) 
